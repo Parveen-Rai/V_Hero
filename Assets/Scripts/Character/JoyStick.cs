@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using v_hero.Utils;
 
-namespace v_hero.Player
+namespace v_hero.Character
 {
     public class Joystick : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IDragHandler
     {

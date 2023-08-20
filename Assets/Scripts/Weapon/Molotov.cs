@@ -6,7 +6,7 @@ namespace v_hero.Weapon
 {
     public class Molotov : Explosive
     {
-        protected override void explode()
+        protected override void Explode()
         {
 
         }

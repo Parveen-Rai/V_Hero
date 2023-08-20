@@ -1,7 +1,7 @@
 using UnityEngine;
 using v_hero.Utils;
 
-namespace v_hero.Player
+namespace v_hero.Character
 {
     public class Player : MonoBehaviour
     {
@@ -16,10 +16,10 @@ namespace v_hero.Player
             maxX = -screenBounds.x - offset;
             minY = screenBounds.y + offset;
             maxY = -screenBounds.y - offset;
-            EventManager.SubscribeEvent<Vector2>("moveInput", move);
+            EventManager.SubscribeEvent<Vector2>("moveInput", Move);
         }
 
-        void move(Vector2 input)
+        void Move(Vector2 input)
         {
             Vector2 movement = new Vector2(input.x, input.y) * speed * Time.deltaTime;
             transform.Translate(Mathf.Clamp(movement.x, minX, maxX), Mathf.Clamp(movement.y, minY, maxY), transform.position.z);

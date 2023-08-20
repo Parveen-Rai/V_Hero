@@ -8,6 +8,6 @@ namespace v_hero.Weapon
     {
         protected float damage;
         protected float explosionRadius;
-        protected abstract void explode();
+        protected abstract void Explode();
     }
 }
