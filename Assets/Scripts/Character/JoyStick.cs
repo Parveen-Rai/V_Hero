@@ -26,12 +26,14 @@ namespace v_hero.Character
         public void OnPointerDown(PointerEventData eventData)
         {
             isJoystickPressed = true;
+            TimeManager.Instance.UndoSlowMotion();
         }
 
         public void OnPointerUp(PointerEventData eventData)
         {
             isJoystickPressed = false;
             joystickHandlle.position = joystickStartPosition;
+            TimeManager.Instance.DoSlowMotion();
 
         }
 

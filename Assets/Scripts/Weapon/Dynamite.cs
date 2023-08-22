@@ -10,7 +10,7 @@ namespace v_hero.Weapon
         // Start is called before the first frame update
         private void Start()
         {
-            transform.DOScale(0.7f, 1f)
+            transform.DOScale(0.7f, 0.1f)
                 .SetEase(Ease.InQuint)
                 .SetLoops(-1, LoopType.Yoyo);
         }
