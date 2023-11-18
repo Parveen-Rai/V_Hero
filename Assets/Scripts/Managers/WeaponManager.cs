@@ -15,7 +15,7 @@ namespace v_hero.Managers
 
         public void PlaceBomb()
         {
-            Explosive explosive = WeaponFactory.CreateExplosive("dynamite", player);
+            _ = WeaponFactory.CreateExplosive("dynamite", player);
         }
     }
 }

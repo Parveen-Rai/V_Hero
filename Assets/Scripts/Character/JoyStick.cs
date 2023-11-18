@@ -12,7 +12,8 @@ namespace v_hero.Character
         private RectTransform joystickRing;
 
         private Vector2 joystickStartPosition;
-        private readonly float JoystickRadius = 100f;
+        [SerializeField]
+        private float JoystickRadius = 100f;
         private Vector2 inputDirection = Vector2.zero;
         private bool isJoystickPressed;
 
