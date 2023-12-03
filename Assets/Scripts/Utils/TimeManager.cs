@@ -31,6 +31,11 @@ namespace v_hero.Utils
             }
         }
 
+        private void Awake()
+        {
+            DontDestroyOnLoad(this.gameObject);
+        }
+
         public void DoSlowMotion()
         {
             Time.timeScale = slowDownFactor;

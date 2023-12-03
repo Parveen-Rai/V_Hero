@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace v_hero.Utils
 {
@@ -35,6 +36,22 @@ namespace v_hero.Utils
             }
         }
 
+        // Initialize the event dictionaries
+        private void Awake()
+        {
+            eventDictionaryWithData = new Dictionary<string, Delegate>();
+            eventDictionaryWithoutData = new Dictionary<string, Action>();
+            DontDestroyOnLoad(this.gameObject);
+
+        }
+
+        private void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                SceneManager.LoadScene(1);
+            }
+        }
         // Subscribe to an event with data
         public static void SubscribeEvent<T>(string eventName, Action<T> eventHandler)
         {
@@ -102,12 +119,6 @@ namespace v_hero.Utils
             }
         }
 
-        // Initialize the event dictionaries
-        private void Awake()
-        {
-            eventDictionaryWithData = new Dictionary<string, Delegate>();
-            eventDictionaryWithoutData = new Dictionary<string, Action>();
-        }
     }
 
 }
