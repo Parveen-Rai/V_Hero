@@ -6,7 +6,19 @@ namespace v_hero
 {
     public class Player
     {
-        public static Player instance;
+        private static Player instance;
+
+        public static Player Instance
+        {
+            get
+            {
+                if (instance == null)
+                {
+                    instance = new Player();
+                }
+                return instance;
+            }
+        }
         public string name { set; get; }
         public float health { set; get; }
         public int level { set; get; }
