@@ -1,8 +1,6 @@
 using UnityEngine;
-using v_hero.Weapon;
-using v_hero.Factory;
 
-namespace v_hero.Managers
+namespace v_hero
 {
     public class WeaponManager : MonoBehaviour
     {
@@ -10,7 +8,16 @@ namespace v_hero.Managers
 
         private void Start()
         {
-            player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+            try
+            {
+                player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+            }
+            catch (System.Exception)
+            {
+
+                Debug.Log("Error In getting player ");
+            }
+            
         }
 
         public void PlaceBomb()

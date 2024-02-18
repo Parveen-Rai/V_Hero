@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using BehaviourTree;
 
-namespace v_hero.BaseTree
+namespace v_hero
 {
     public abstract class NodeTree : MonoBehaviour
     {

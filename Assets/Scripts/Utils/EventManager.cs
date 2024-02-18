@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace v_hero.Utils
+namespace v_hero
 {
     public class EventManager : MonoBehaviour
     {
@@ -53,7 +53,7 @@ namespace v_hero.Utils
             }
         }
         // Subscribe to an event with data
-        public static void SubscribeEvent<T>(string eventName, Action<T> eventHandler)
+        public void SubscribeEvent<T>(string eventName, Action<T> eventHandler)
         {
             if (Instance.eventDictionaryWithData.ContainsKey(eventName))
             {
@@ -66,7 +66,7 @@ namespace v_hero.Utils
         }
 
         // Subscribe to an event without data
-        public static void SubscribeEvent(string eventName, Action eventHandler)
+        public void SubscribeEvent(string eventName, Action eventHandler)
         {
             if (Instance.eventDictionaryWithoutData.ContainsKey(eventName))
             {
@@ -79,7 +79,7 @@ namespace v_hero.Utils
         }
 
         // Unsubscribe from an event with data
-        public static void UnsubscribeEvent<T>(string eventName, Action<T> eventHandler)
+        public void UnsubscribeEvent<T>(string eventName, Action<T> eventHandler)
         {
             if (Instance.eventDictionaryWithData.ContainsKey(eventName))
             {
@@ -88,7 +88,7 @@ namespace v_hero.Utils
         }
 
         // Unsubscribe from an event without data
-        public static void UnsubscribeEvent(string eventName, Action eventHandler)
+        public void UnsubscribeEvent(string eventName, Action eventHandler)
         {
             if (Instance.eventDictionaryWithoutData.ContainsKey(eventName))
             {
@@ -97,7 +97,7 @@ namespace v_hero.Utils
         }
 
         // Trigger an event with data
-        public static void TriggerEvent<T>(string eventName, T eventData)
+        public void TriggerEvent<T>(string eventName, T eventData)
         {
             if (Instance.eventDictionaryWithData.ContainsKey(eventName))
             {
@@ -111,7 +111,7 @@ namespace v_hero.Utils
         }
 
         // Trigger an event without data
-        public static void TriggerEvent(string eventName)
+        public void TriggerEvent(string eventName)
         {
             if (Instance.eventDictionaryWithoutData.ContainsKey(eventName))
             {

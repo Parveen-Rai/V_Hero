@@ -1,16 +1,17 @@
 using UnityEngine;
-using v_hero.Utils;
+using static v_hero.GameConstant;
 
-namespace v_hero.Character
+namespace v_hero
 {
-    public class Player : MonoBehaviour
+    public class Character : MonoBehaviour
     {
         [SerializeField]
         private float speed = 5f;
       
         void Start()
         {
-            EventManager.SubscribeEvent<Vector2>("moveInput", Move);
+            EVENT.SubscribeEvent<Vector2>(GAME_EVENTS.MOVE.ToString(), Move);
+            
         }
 
         void Move(Vector2 input)

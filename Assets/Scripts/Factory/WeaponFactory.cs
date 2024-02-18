@@ -1,9 +1,8 @@
 using UnityEngine;
-using v_hero.Weapon;
 
-namespace v_hero.Factory
+namespace v_hero
 {
-    public static class WeaponFactory
+    public class WeaponFactory
     {
         public static Explosive CreateExplosive(string explosiveType, Transform spawnPoint)
         {

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace v_hero.Utils
+namespace v_hero
 {
     public class TimeManager : MonoBehaviour
     {

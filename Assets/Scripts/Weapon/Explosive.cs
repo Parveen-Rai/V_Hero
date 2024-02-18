@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace v_hero.Weapon
+namespace v_hero
 {
     public abstract class Explosive : MonoBehaviour
     {

@@ -1,7 +1,7 @@
 using BehaviourTree;
 using UnityEngine;
 
-namespace v_hero.Enemy
+namespace v_hero
 {
     public class FallBackToAttackPos : Node
     {

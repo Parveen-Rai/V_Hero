@@ -2,9 +2,10 @@ using BehaviourTree;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using v_hero.BaseTree;
 
-namespace v_hero.Enemy
+
+
+namespace v_hero
 {
     public class SlimeBT : NodeTree, IEnemy
     {

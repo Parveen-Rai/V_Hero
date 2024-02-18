@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 
-namespace v_hero.Weapon
+namespace v_hero
 {
     public class Dynamite : Explosive
     {

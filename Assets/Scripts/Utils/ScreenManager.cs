@@ -3,16 +3,12 @@ using UnityEngine;
 
 namespace v_hero
 {
-    public  class ScreenManager : MonoBehaviour
+    public class ScreenManager : MonoBehaviour
     {
         [SerializeField]
         private AbstractScreen[] screens;
 
-        [SerializeField]
-        [Tooltip("Leave Empty to set first screen as default screen")]
-        private AbstractScreen initialScreen;
-
-        private AbstractScreen currentScreen;
+        private int currentScreen;
 
         private static ScreenManager instance;
 
@@ -37,33 +33,31 @@ namespace v_hero
 
         private void Awake()
         {
-            if (initialScreen != null)
+            if (screens.Length > 0)
             {
-                currentScreen = null;
-            }
-            else
-            {
-                currentScreen = screens[0];
+                currentScreen = 0;
+                ShowScreen(currentScreen);
             }
         }
 
-        public void ShowScreen(int ScreenIndex, params object[] parameters)
+        public void ShowScreen(int screenIndex , object data = null , Action cb = null)
         {
-            if (currentScreen != screens[ScreenIndex])
+            if (screenIndex >= 0 && screenIndex < screens.Length && screens[screenIndex] != null)
             {
-                EnableScreen(ScreenIndex, parameters);
-                
+                EnableScreen(screenIndex, data, cb);
             }
         }
 
-        private void EnableScreen(int ScreenIndex, object[] parameters)
+        private void EnableScreen(int screenIndex , object data = null ,Action cb = null)
         {
-            currentScreen.OnHide();
-            currentScreen.gameObject.SetActive(false);
-            currentScreen = screens[ScreenIndex];
-            currentScreen.gameObject.SetActive(true);
-            currentScreen.Onshow(parameters);
+            if (currentScreen == screenIndex) return;
+            screens[currentScreen].OnHide();
+            screens[currentScreen].gameObject.SetActive(false);
+            if (cb != null) cb.Invoke();
+            screens[screenIndex].gameObject.SetActive(true);
+            screens[screenIndex].Onshow(data);
+            currentScreen = screenIndex;
         }
-
     }
+ 
 }

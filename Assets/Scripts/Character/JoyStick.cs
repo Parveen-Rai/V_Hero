@@ -1,8 +1,8 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
-using v_hero.Utils;
+using static v_hero.GameConstant;
 
-namespace v_hero.Character
+namespace v_hero
 {
     public class Joystick : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IDragHandler
     {
@@ -27,14 +27,14 @@ namespace v_hero.Character
         public void OnPointerDown(PointerEventData eventData)
         {
             isJoystickPressed = true;
-            TimeManager.Instance.UndoSlowMotion();
+            TIME.UndoSlowMotion();
         }
 
         public void OnPointerUp(PointerEventData eventData)
         {
             isJoystickPressed = false;
             joystickHandlle.position = joystickStartPosition;
-            TimeManager.Instance.DoSlowMotion();
+            TIME.DoSlowMotion();
 
         }
 
@@ -50,7 +50,7 @@ namespace v_hero.Character
         {
             if (isJoystickPressed)
             {
-                EventManager.TriggerEvent<Vector2>("moveInput", inputDirection);
+                EVENT.TriggerEvent(GAME_EVENTS.MOVE.ToString(), inputDirection);
             }
         }
     }
