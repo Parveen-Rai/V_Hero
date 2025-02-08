@@ -7,18 +7,6 @@ namespace v_hero
     public class Player
     {
         private static Player instance;
-
-        public static Player Instance
-        {
-            get
-            {
-                if (instance == null)
-                {
-                    instance = new Player();
-                }
-                return instance;
-            }
-        }
         public string name { set; get; }
         public float health { set; get; }
         public int level { set; get; }
@@ -38,6 +26,15 @@ namespace v_hero
             targetXp = 100f;
             primaryCurrency = 250;
             secondaryCurrency = 50;
+        }
+
+        public static Player GetUser()
+        {
+            if (instance == null)
+            {
+                instance = new Player();
+            }
+            return instance;
         }
 
         public void SaveData()

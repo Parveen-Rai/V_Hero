@@ -77,6 +77,7 @@ ScriptedImporter:
     defaultPivotSpace: 0
     defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
     spritePadding: 0
     generateModelPrefab: 1
     generateAnimationClips: 1
@@ -89,6 +90,7 @@ ScriptedImporter:
     defaultPivotSpace: 0
     defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
     spritePadding: 0
     generateModelPrefab: 1
     generateAnimationClips: 1
@@ -103,6 +105,7 @@ ScriptedImporter:
     pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 0
@@ -124,6 +127,7 @@ ScriptedImporter:
     pivot: {x: 0.6, y: -0.59999996}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -144,6 +148,7 @@ ScriptedImporter:
     pivot: {x: 0.6, y: -0.59999996}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -164,6 +169,7 @@ ScriptedImporter:
     pivot: {x: 0.6, y: -0.59999996}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -184,6 +190,7 @@ ScriptedImporter:
     pivot: {x: 0.6, y: -0.59999996}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -204,6 +211,7 @@ ScriptedImporter:
     pivot: {x: 0.6, y: -0.59999996}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 22
@@ -224,6 +232,7 @@ ScriptedImporter:
     pivot: {x: 0.6, y: -0.79999995}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 22
@@ -244,6 +253,7 @@ ScriptedImporter:
     pivot: {x: 0.6, y: -0.79999995}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 22
@@ -264,6 +274,7 @@ ScriptedImporter:
     pivot: {x: 0.62499994, y: -1.5}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -284,6 +295,7 @@ ScriptedImporter:
     pivot: {x: 0.62499994, y: -1.5}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 40
@@ -304,6 +316,7 @@ ScriptedImporter:
     pivot: {x: 0.66666675, y: -2.1666665}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 40
@@ -324,6 +337,7 @@ ScriptedImporter:
     pivot: {x: 0.6, y: -0.59999996}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 22
@@ -344,6 +358,7 @@ ScriptedImporter:
     pivot: {x: 0.75, y: -0.77777773}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 22
@@ -364,6 +379,7 @@ ScriptedImporter:
     pivot: {x: 0.50000006, y: -1.2857143}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 40
@@ -384,6 +400,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: -2.5555556}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 40
@@ -404,6 +421,7 @@ ScriptedImporter:
     pivot: {x: 0.66666675, y: -3.5714285}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 40
@@ -428,120 +446,135 @@ ScriptedImporter:
     layerType: 0
     blendMode: 0
     cells:
-    - name: summons1_Frame_0
+    - name: Frame_0
       frameIndex: 0
+      additiveSortOrder: 0
       cellRect:
         x: 19
         y: 12
         width: 10
         height: 20
       spriteId: 72baafe4362b58e4e9422a0e67a8257d
-    - name: summons1_Frame_1
+    - name: Frame_1
       frameIndex: 1
+      additiveSortOrder: 0
       cellRect:
         x: 19
         y: 12
         width: 10
         height: 20
       spriteId: eb7e7d83f176f124498eddecc323e947
-    - name: summons1_Frame_2
+    - name: Frame_2
       frameIndex: 2
+      additiveSortOrder: 0
       cellRect:
         x: 19
         y: 12
         width: 10
         height: 20
       spriteId: e1b84dfec4cf3d04bb4ccfbe100ffcaa
-    - name: summons1_Frame_3
+    - name: Frame_3
       frameIndex: 3
+      additiveSortOrder: 0
       cellRect:
         x: 19
         y: 12
         width: 10
         height: 20
       spriteId: c87f587d8c22eee4c8dccfeac2b96fbb
-    - name: summons1_Frame_4
+    - name: Frame_4
       frameIndex: 4
+      additiveSortOrder: 0
       cellRect:
         x: 19
         y: 12
         width: 10
         height: 20
       spriteId: 4c3eeb1fad6f60d4db69fc2a8459cbfb
-    - name: summons1_Frame_5
+    - name: Frame_5
       frameIndex: 5
+      additiveSortOrder: 0
       cellRect:
         x: 19
         y: 12
         width: 10
         height: 15
       spriteId: 67d16f229e95b264ab441d46204994b2
-    - name: summons1_Frame_6
+    - name: Frame_6
       frameIndex: 6
+      additiveSortOrder: 0
       cellRect:
         x: 19
         y: 12
         width: 10
         height: 15
       spriteId: 6e82d6e6d2e55e2419d332552262d1ee
-    - name: summons1_Frame_7
+    - name: Frame_7
       frameIndex: 7
+      additiveSortOrder: 0
       cellRect:
         x: 20
         y: 12
         width: 8
         height: 8
       spriteId: 01306fcf1a3fe7e43a9949fdfbc321be
-    - name: summons1_Frame_8
+    - name: Frame_8
       frameIndex: 8
+      additiveSortOrder: 0
       cellRect:
         x: 20
         y: 12
         width: 8
         height: 8
       spriteId: aeaeed630e82b3243983c38d0a1d33de
-    - name: summons1_Frame_9
+    - name: Frame_9
       frameIndex: 9
+      additiveSortOrder: 0
       cellRect:
         x: 21
         y: 13
         width: 6
         height: 6
       spriteId: 343b0cd8f093b0e43b32264920a436ed
-    - name: summons1_Frame_10
+    - name: Frame_10
       frameIndex: 10
+      additiveSortOrder: 0
       cellRect:
         x: 19
         y: 12
         width: 10
         height: 20
       spriteId: 004d2551fb08bbb4ca398dc265826b52
-    - name: summons1_Frame_11
+    - name: Frame_11
       frameIndex: 11
+      additiveSortOrder: 0
       cellRect:
         x: 19
         y: 14
         width: 8
         height: 18
       spriteId: d7e996a5e15974b439e2fa649cd708f0
-    - name: summons1_Frame_12
+    - name: Frame_12
       frameIndex: 12
+      additiveSortOrder: 0
       cellRect:
         x: 21
         y: 18
         width: 8
         height: 14
       spriteId: dedb9bd999a44b24bb50f7e2a9be1394
-    - name: summons1_Frame_13
+    - name: Frame_13
       frameIndex: 13
+      additiveSortOrder: 0
       cellRect:
         x: 22
         y: 23
         width: 6
         height: 9
       spriteId: e380c1ec047f4524a82f1d61099984cb
-    - name: summons1_Frame_14
+    - name: Frame_14
       frameIndex: 14
+      additiveSortOrder: 0
       cellRect:
         x: 21
         y: 25
@@ -551,6 +584,7 @@ ScriptedImporter:
     linkedCells: []
     parentIndex: -1
   platformSettings: []
+  generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
   canvasSize: {x: 50, y: 50}

@@ -77,6 +77,7 @@ ScriptedImporter:
     defaultPivotSpace: 0
     defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
     spritePadding: 0
     generateModelPrefab: 1
     generateAnimationClips: 1
@@ -89,6 +90,7 @@ ScriptedImporter:
     defaultPivotSpace: 0
     defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
     spritePadding: 0
     generateModelPrefab: 1
     generateAnimationClips: 1
@@ -103,6 +105,7 @@ ScriptedImporter:
     pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 0
@@ -124,6 +127,7 @@ ScriptedImporter:
     pivot: {x: 0.35555556, y: -0.27419356}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 78
@@ -144,6 +148,7 @@ ScriptedImporter:
     pivot: {x: 0.35555556, y: -0.31666666}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 78
@@ -164,6 +169,7 @@ ScriptedImporter:
     pivot: {x: 0.35555556, y: -0.31666666}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 131
@@ -184,6 +190,7 @@ ScriptedImporter:
     pivot: {x: 0.35555556, y: -0.3859649}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 131
@@ -204,6 +211,7 @@ ScriptedImporter:
     pivot: {x: 0.35555556, y: -0.27419356}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 78
@@ -224,6 +232,7 @@ ScriptedImporter:
     pivot: {x: 0.6451613, y: -0.28787878}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 131
@@ -244,6 +253,7 @@ ScriptedImporter:
     pivot: {x: 0.30303028, y: -0.23943663}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -264,6 +274,7 @@ ScriptedImporter:
     pivot: {x: 0.27586207, y: -0.3148148}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -284,6 +295,7 @@ ScriptedImporter:
     pivot: {x: 0.30188677, y: -0.3148148}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -308,72 +320,81 @@ ScriptedImporter:
     layerType: 0
     blendMode: 0
     cells:
-    - name: LayeredProject_Frame_0
+    - name: Frame_0
       frameIndex: 0
+      additiveSortOrder: 0
       cellRect:
         x: 34
         y: 17
         width: 45
         height: 62
       spriteId: 2ef0566228bac9645a8a09ef3587808b
-    - name: LayeredProject_Frame_1
+    - name: Frame_1
       frameIndex: 1
+      additiveSortOrder: 0
       cellRect:
         x: 34
         y: 19
         width: 45
         height: 60
       spriteId: efd00f1048ff12c42b7c6edd1a295fcc
-    - name: LayeredProject_Frame_2
+    - name: Frame_2
       frameIndex: 2
+      additiveSortOrder: 0
       cellRect:
         x: 34
         y: 19
         width: 45
         height: 60
       spriteId: c01d691ccd1e1194fbbdbc7a935083d5
-    - name: LayeredProject_Frame_3
+    - name: Frame_3
       frameIndex: 3
+      additiveSortOrder: 0
       cellRect:
         x: 34
         y: 22
         width: 45
         height: 57
       spriteId: d70e1695fbca7644c979a95916fb8354
-    - name: LayeredProject_Frame_4
+    - name: Frame_4
       frameIndex: 4
+      additiveSortOrder: 0
       cellRect:
         x: 34
         y: 17
         width: 45
         height: 62
       spriteId: 1a41b3e6f50299144a551dddc827aacb
-    - name: LayeredProject_Frame_5
+    - name: Frame_5
       frameIndex: 5
+      additiveSortOrder: 0
       cellRect:
         x: 30
         y: 19
         width: 31
         height: 66
       spriteId: 35e1ba1542772ed4bab1ab5f87a9cbce
-    - name: LayeredProject_Frame_6
+    - name: Frame_6
       frameIndex: 6
+      additiveSortOrder: 0
       cellRect:
         x: 30
         y: 17
         width: 66
         height: 71
       spriteId: 172f285df2f3dc049a72f0b361c3717d
-    - name: LayeredProject_Frame_7
+    - name: Frame_7
       frameIndex: 7
+      additiveSortOrder: 0
       cellRect:
         x: 34
         y: 17
         width: 58
         height: 54
       spriteId: a5822cf0764d3b547bb9aabe649e595b
-    - name: LayeredProject_Frame_8
+    - name: Frame_8
       frameIndex: 8
+      additiveSortOrder: 0
       cellRect:
         x: 34
         y: 17
@@ -383,6 +404,7 @@ ScriptedImporter:
     linkedCells: []
     parentIndex: -1
   platformSettings: []
+  generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
   canvasSize: {x: 100, y: 100}

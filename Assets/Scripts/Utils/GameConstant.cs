@@ -24,7 +24,7 @@ namespace v_hero
 
         public static TimeManager TIME => TimeManager.Instance;
 
-        public static Player USER => Player.Instance;
+        public static Player USER => Player.GetUser();
     }
    
 

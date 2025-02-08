@@ -9,18 +9,21 @@ namespace v_hero
 
         [SerializeField]
         private RectTransform joystickHandlle;
+        [SerializeField]
         private RectTransform joystickRing;
 
         private Vector2 joystickStartPosition;
-        [SerializeField]
+        //[SerializeField]
         private float JoystickRadius = 100f;
         private Vector2 inputDirection = Vector2.zero;
         private bool isJoystickPressed;
 
         public void OnDrag(PointerEventData eventData)
         {
-            Vector2 position = eventData.position - joystickStartPosition;
-            joystickHandlle.position = joystickStartPosition + Vector2.ClampMagnitude(position, JoystickRadius);
+            Vector2 position = eventData.delta;
+            Vector2 newVec = position + new Vector2(JoystickRadius, JoystickRadius);
+            Debug.Log("vector" + Vector2.ClampMagnitude(newVec, JoystickRadius));
+            joystickHandlle.localPosition =  Vector2.ClampMagnitude(newVec, JoystickRadius);
             inputDirection = position.normalized;
         }
 
@@ -33,7 +36,7 @@ namespace v_hero
         public void OnPointerUp(PointerEventData eventData)
         {
             isJoystickPressed = false;
-            joystickHandlle.position = joystickStartPosition;
+            joystickHandlle.localPosition = joystickStartPosition;
             TIME.DoSlowMotion();
 
         }
@@ -41,8 +44,9 @@ namespace v_hero
 
         void Start()
         {
-            joystickRing = joystickHandlle.parent.gameObject.GetComponent<RectTransform>();
-            joystickStartPosition = joystickHandlle.position;
+            JoystickRadius = joystickRing.rect.width/2;
+            joystickStartPosition = joystickHandlle.localPosition;
+            Debug.Log("joysrickRadius" + joystickStartPosition);
         }
 
         // Update is called once per frame
